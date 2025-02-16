@@ -1,0 +1,11 @@
+{
+    "name": "rusttest",
+    "version": "0.0.1",
+    "description": "Basic rust client example, that run using binaries",
+    "main": "rusttest",
+    "openiap": {
+        "daemon": true,
+        "chromium": false,
+        "language": "exec"
+    }
+}

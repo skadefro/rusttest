@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'rusttest'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rusttest",
+                    "--package=rusttest"
+                ],
+                "filter": {
+                    "name": "rusttest",
+                    "kind": "bin"
+                }
+            },
+            "envFile": "${workspaceFolder}/.env",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'rusttest'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rusttest",
+                    "--package=rusttest"
+                ],
+                "filter": {
+                    "name": "rusttest",
+                    "kind": "bin"
+                }
+            },
+            "envFile": "${workspaceFolder}/.env",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
