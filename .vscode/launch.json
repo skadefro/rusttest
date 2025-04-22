@@ -2,9 +2,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug executable 'rusttest'",
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'rusttest'",
+            "envFile": "${workspaceFolder}/.env",
+            "terminal": "integrated",
+            "program": "${workspaceRoot}/target/debug/rusttest",
             "cargo": {
                 "args": [
                     "build",
@@ -16,7 +19,6 @@
                     "kind": "bin"
                 }
             },
-            "envFile": "${workspaceFolder}/.env",
             "args": [],
             "cwd": "${workspaceFolder}"
         },

@@ -4,5 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-openiap-client = "0.0.21"
+openiap-client = "0.0.33"
 tokio = "1.41.0"
+rand =  { version = "0.9.0" }
+tracing = { version = "0.1.40", features = ["log", "attributes"] }
+futures = { version = "0.3.31" }
